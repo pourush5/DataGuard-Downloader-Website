@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataGuard Downloader - Daily Data Budget & Resumable Download Manager</title>
+  <!-- Google Fonts: Inter and Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Vercel Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="glow-bg"></div>
+
+  <!-- Header / Nav -->
+  <header class="glass-header">
+    <div class="logo">
+      <i class="fa-solid fa-shield-halved logo-icon"></i>
+      <span>DataGuard</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#install">Installation</a>
+      <a href="https://github.com/pourush5/DataGuard-Downloader" target="_blank" rel="noopener noreferrer" class="github-icon-link"><i class="fa-brands fa-github"></i></a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-container">
+    <div class="hero-text">
+      <div class="badge-new">
+        <span class="badge-dot"></span> v1.0.0-beta out now
+      </div>
+      <h1>Safeguard Your Bandwidth With <span>DataGuard</span></h1>
+      <p class="hero-desc">
+        A premium desktop download manager featuring smart daily data limits, automatic download pausing, and session-cookie syncing. Built for metered, capped, and hotspot connections.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="https://github.com/pourush5/DataGuard-Downloader/releases/latest/download/DataGuard_Downloader_Setup.exe" id="download-btn" class="btn btn-primary">
+          <i class="fa-solid fa-download"></i> Download for Windows
+        </a>
+        <a href="#install" class="btn btn-secondary">
+          Setup Guide
+        </a>
+      </div>
+      
+      <div class="hero-meta">
+        <span><i class="fa-solid fa-check"></i> Free & Open Source</span>
+        <span><i class="fa-solid fa-check"></i> No Ads / No Tracking</span>
+      </div>
+    </div>
+
+    <!-- Visual Dashboard Mockup -->
+    <div class="hero-preview">
+      <div class="glass-card preview-card">
+        <div class="preview-header">
+          <div class="window-controls">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+          </div>
+          <span class="preview-title">DataGuard Downloader Dashboard</span>
+        </div>
+        <div class="preview-body">
+          <div class="mock-grid">
+            <div class="mock-panel-left">
+              <div class="mock-widget">
+                <span class="mock-label">Today's Data Budget</span>
+                <span class="mock-value">1.42 GB <span class="mock-sub-val">of 2.00 GB</span></span>
+                <div class="mock-progress-bar">
+                  <div class="mock-progress-fill" style="width: 71%"></div>
+                </div>
+              </div>
+              <div class="mock-widget">
+                <span class="mock-label">Auto-Pause Guard</span>
+                <div class="mock-toggle-row">
+                  <span class="mock-toggle-status">Active</span>
+                  <div class="mock-toggle-switch active"></div>
+                </div>
+              </div>
+            </div>
+            <div class="mock-panel-right">
+              <div class="mock-download-item">
+                <div class="mock-item-header">
+                  <span class="mock-filename">large_game_installer.zip</span>
+                  <span class="mock-speed">4.8 MB/s</span>
+                </div>
+                <div class="mock-progress-bar">
+                  <div class="mock-progress-fill speed-green" style="width: 45%"></div>
+                </div>
+              </div>
+              <div class="mock-download-item">
+                <div class="mock-item-header">
+                  <span class="mock-filename">development_assets.rar</span>
+                  <span class="mock-speed">Paused</span>
+                </div>
+                <div class="mock-progress-bar">
+                  <div class="mock-progress-fill speed-orange" style="width: 82%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <h2>Supercharge Your Downloads</h2>
+    <p class="section-subtitle">Packed with utility features designed specifically to safeguard your daily data pack.</p>
+    
+    <div class="features-grid">
+      <div class="glass-card feature-card">
+        <i class="fa-solid fa-hand-holding-hand feature-icon"></i>
+        <h3>Smart Budget Guard</h3>
+        <p>Set your daily limit (e.g., 1.5GB) and downloads will automatically pause the split second you reach it, protecting you from overage costs.</p>
+      </div>
+
+      <div class="glass-card feature-card">
+        <i class="fa-solid fa-arrows-rotate feature-icon"></i>
+        <h3>Resumable Engine</h3>
+        <p>Stop, pause, or resume downloads at will. DataGuard remembers every single byte downloaded so you never waste bandwidth redownloading.</p>
+      </div>
+
+      <div class="glass-card feature-card">
+        <i class="fa-solid fa-cookie-bite feature-icon"></i>
+        <h3>Cookie Syncing</h3>
+        <p>Our companion browser extension carries over your cookies, allowing you to seamlessly download files from authenticated sites.</p>
+      </div>
+
+      <div class="glass-card feature-card">
+        <i class="fa-solid fa-arrow-rotate-left feature-icon"></i>
+        <h3>Link Refresher</h3>
+        <p>Expired download link? Refresh it instantly inside the app to resume the download from where it was paused without losing progress.</p>
+      </div>
+
+      <div class="glass-card feature-card">
+        <i class="fa-solid fa-circle-nodes feature-icon"></i>
+        <h3>Self-Healing Ports</h3>
+        <p>Automatically scans and binds to free local ports if standard ports are busy, ensuring your app launches perfectly every time.</p>
+      </div>
+
+      <div class="glass-card feature-card">
+        <i class="fa-solid fa-chart-line feature-icon"></i>
+        <h3>Bandwidth Analytics</h3>
+        <p>Monitor real-time speed charts and historical daily consumption tables to understand your download behavior over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation / Guide -->
+  <section id="install" class="install-section">
+    <h2>Simple Installation Guide</h2>
+    
+    <div class="steps-container">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Install the Desktop Client</h3>
+        <p>Download and run the installer for the desktop application. This registers the background download service and launches the premium dashboard.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Install Browser Extension (Coming Soon)</h3>
+        <p>Load the companion extension in Developer mode (or install from Chrome Web Store). This redirects standard browser downloads directly to DataGuard.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Configure & Enjoy</h3>
+        <p>Open the dashboard, set your daily limit limits, configure your target folders, and download files with complete data peace of mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>DataGuard Downloader &copy; 2026. Hand crafted by <a href="https://pourushpandey.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio-link">Pourush Pandey</a></p>
+  </footer>
+
+  <!-- Track download clicks using Vercel Analytics -->
+  <script>
+    document.getElementById('download-btn').addEventListener('click', () => {
+      if (window.va) {
+        window.va.track('desktop_download', { os: 'windows' });
+      }
+    });
+  </script>
+</body>
+</html>
